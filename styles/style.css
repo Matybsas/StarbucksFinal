@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+:root{
+    --main-publicidad:#106242;
+    --main-postulaciones:#d5e9e2;
+    --main-sombreado:rgb(212, 212, 212);
+    --main-menu: #15754b;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(93, 91, 91);
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+    box-shadow: 2px 2px 5px var( --main-sombreado);
+}
+/*LOGO HOME*/
+.logo {
+    width: 20%;
+    height: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+.logo a img {
+    width: 70px;
+    height: 70px;
+}
+/*MENU*/
+nav {
+    width:40%;
+    height: 90px;
+}
+
+nav ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+nav ul li a:hover{
+    color:var(--main-menu);
+    border-bottom: 5px solid var(--main-menu);
+    padding-bottom: 35px;
+}
+
+/*BODY*/
+.contenedor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.viaje{
+    width: 73%;
+    height:370px;
+    background-color: var(--main-publicidad);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imagen{
+    width:50%; 
+    height: 100%;
+    max-height: 100%;   
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagen img{
+
+    width: 100%;
+    height: 100%;
+}
+.publicidad a {
+    color: white;
+}
+.botonUno{
+    border: 1px solid white;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.publicidad .botonUno:hover{
+    background: #d5e9e22b;
+}
+.publicidad{
+    width: 50%;
+    height: 370px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.postulaciones{
+    width: 73%;
+    height: auto;
+    margin-top: 30px;
+    background-color: var(--main-postulaciones);
+    display: flex;
+}
+.contPostulacion{
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    
+    align-items: center;
+    justify-content: center;
+}
+.contImagen{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contPostulacion h2{
+    color: var(--main-menu);
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px var( --main-sombreado);
+}
