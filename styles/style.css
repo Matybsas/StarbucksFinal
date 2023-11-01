@@ -1,15 +1,14 @@
-
 * {
     margin: 0;
     padding: 0;
-    font-family: SoDo Sans,Helvetica,Arial,sans-serif;
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
-:root{
-    --main-publicidad:#106242;
-    --main-postulaciones:#d5e9e2;
-    --main-sombreado:rgb(212, 212, 212);
+:root {
+    --main-publicidad: #106242;
+    --main-postulaciones: #d5e9e2;
+    --main-sombreado: rgb(212, 212, 212);
     --main-menu: #15754b;
 }
 
@@ -25,12 +24,13 @@ header {
     flex-flow: column wrap;
     justify-content: center;
     align-items: start;
-    box-shadow: 2px 2px 5px var( --main-sombreado);
+    box-shadow: 2px 2px 5px var(--main-sombreado);
 }
+
 /*LOGO HOME*/
 .logo {
     width: 20%;
-    height: 90px;
+    height: 80px;
     display: flex;
     flex-flow: row wrap;
     justify-content: end;
@@ -41,34 +41,36 @@ header {
     width: 70px;
     height: 70px;
 }
+
 /*MENU*/
 nav {
-    width:40%;
-    height: 90px;
+    width: 40%;
+    height: 80px;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     height: auto;
     list-style: none;
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     width: 100%;
     height: 90px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
 }
-nav ul li a:hover{
-    color:var(--main-menu);
+
+nav ul li a:hover {
+    line-height: 60px;
+    color: var(--main-menu);
     border-bottom: 5px solid var(--main-menu);
-    padding-bottom: 35px;
 }
 
 /*BODY*/
-.contenedor{
+.contenedor {
     width: 100%;
     height: auto;
     display: flex;
@@ -76,41 +78,47 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
-.viaje{
+
+.viaje {
     width: 73%;
-    height:370px;
+    height: 370px;
     background-color: var(--main-publicidad);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
-.imagen{
-    width:50%; 
+
+.imagen {
+    width: 50%;
     height: 100%;
-    max-height: 100%;   
+    max-height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.imagen img{
+
+.imagen img {
 
     width: 100%;
     height: 100%;
 }
+
 .publicidad a {
     color: white;
 }
-.botonUno{
+
+.botonUno {
     border: 1px solid white;
     margin-top: 15px;
     padding: 5px;
     border-radius: 50px;
 }
 
-.publicidad .botonUno:hover{
+.publicidad .botonUno:hover {
     background: #d5e9e22b;
 }
-.publicidad{
+
+.publicidad {
     width: 50%;
     height: 370px;
     color: white;
@@ -121,33 +129,113 @@ nav ul li a:hover{
     align-items: center;
 }
 
-.postulaciones{
+.postulaciones {
     width: 73%;
     height: auto;
     margin-top: 30px;
     background-color: var(--main-postulaciones);
     display: flex;
 }
-.contPostulacion{
+
+.contPostulacion {
     width: 50%;
     display: flex;
     flex-flow: column wrap;
-    
+
     align-items: center;
     justify-content: center;
 }
-.contImagen{
+
+.contImagen {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
-.contPostulacion h2{
+
+.contPostulacion h2 {
     color: var(--main-menu);
 }
 
-footer{
+footer {
     width: 100%;
     height: auto;
-    box-shadow: 2px 2px 5px var( --main-sombreado);
+    box-shadow: 2px 2px 5px var(--main-sombreado);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+}
+
+.contFooter1 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.nosotros,
+.ipactoSocial,
+.atencionCliente,
+.experiencia {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.nosotros a,
+.ipactoSocial a,
+.atencionCliente a,
+.experiencia a{
+    margin: 15px 0;
+}
+
+.nosotros a:hover,
+.ipactoSocial a:hover,
+.atencionCliente a:hover,
+.experiencia a:hover{
+    color: rgb(49, 48, 48);
+}
+
+
+.redesSociales {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    margin: 20px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.redesSociales a i {
+    margin: 25px;
+}
+
+.contIfoWeb {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.contIfoWeb a:not(#mapa) {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 2px solid grey;
+}
+
+.copy {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
 }
