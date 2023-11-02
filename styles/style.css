@@ -351,11 +351,11 @@ hr {
 
 }
 
-.open,
-.close {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
+.ocultarDown {
+    visibility: hidden;
+}
+.mostrar{
+    max-height: 700px !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -403,6 +403,36 @@ hr {
         justify-content: center;
         align-content: center;
         align-items: center;
+    }
+
+    .nosotros,
+    .ipactoSocial,
+    .atencionCliente,
+    .experiencia {
+        width: 100%;
+        height: auto;
+        padding: 30px 0 30px 0;
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    .nosotros i,
+    .ipactoSocial i,
+    .atencionCliente i,
+    .experiencia i {
+        margin-left: 15px;
+    }
+.nosotros,
+.ipactoSocial ,
+.atencionCliente ,
+.experiencia {
+ max-height: 0 !important;
+ overflow:hidden;
+}
+    .ocultarDown {
+        visibility: visible;
+        cursor: pointer;
     }
 
     .contFooter2 {
