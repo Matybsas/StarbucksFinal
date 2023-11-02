@@ -1,15 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
 :root {
     --main-publicidad: #106242;
     --main-postulaciones: #d5e9e2;
-    --main-sombreado: rgb(212, 212, 212);
+    --main-sombreado: rgb(157, 155, 155);
     --main-menu: #15754b;
+    --main-footer: rgb(153, 152, 152);
+    --hover-footer:rgb(108, 108, 108);
 }
 
 a {
@@ -21,16 +23,15 @@ header {
     width: 100%;
     height: 80px;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: start;
-    box-shadow: 2px 2px 5px var(--main-sombreado);
+    flex-flow: row wrap;
+    box-shadow: 2px 2px 7px var(--main-sombreado);
 }
 
 /*LOGO HOME*/
 .logo {
-    width: 20%;
+    width: 22%;
     height: 80px;
+    margin-right: 25px;
     display: flex;
     flex-flow: row wrap;
     justify-content: end;
@@ -44,29 +45,65 @@ header {
 
 /*MENU*/
 nav {
-    width: 40%;
+    width: 35%;
     height: 80px;
 }
 
 nav ul {
     width: 100%;
-    height: auto;
+    height: 80px;
     list-style: none;
     display: flex;
+    gap: 50px;
 }
 
 nav ul li {
     width: 100%;
-    height: 90px;
+    height: 80px;
+    display: flex;
+    flex: 0;
+    align-items: center;
+
+}
+nav ul li a.experiencia{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+}
+
+nav ul li a {
+    font-size: 0.83rem;
+    font-weight: 700;
+    
 }
 
 nav ul li a:hover {
-    line-height: 60px;
+    line-height: 70px;
     color: var(--main-menu);
     border-bottom: 5px solid var(--main-menu);
+}
+
+/*LOCALIZACION TIENDAS*/
+.localizador {
+    width: 25%;
+    height: 80px;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.localizador a {
+    color: black;
+}
+
+.localizador a:hover {
+    color: rgb(93, 91, 91);
+}
+
+.localizador a i {
+    padding-right: 5px;
 }
 
 /*BODY*/
@@ -114,6 +151,17 @@ nav ul li a:hover {
     border-radius: 50px;
 }
 
+.publicidad h2 {
+    margin: 0 50px 15px 50px;
+    font-size: 1.7rem;
+}
+
+.publicidad p {
+    font-size: 1.2rem;
+    margin: 15px 0 15px 0;
+    font-weight: 400;
+}
+
 .publicidad .botonUno:hover {
     background: #d5e9e22b;
 }
@@ -132,7 +180,7 @@ nav ul li a:hover {
 .postulaciones {
     width: 73%;
     height: auto;
-    margin-top: 30px;
+    margin: 30px 0 30px 0;
     background-color: var(--main-postulaciones);
     display: flex;
 }
@@ -141,7 +189,6 @@ nav ul li a:hover {
     width: 50%;
     display: flex;
     flex-flow: column wrap;
-
     align-items: center;
     justify-content: center;
 }
@@ -154,7 +201,25 @@ nav ul li a:hover {
 }
 
 .contPostulacion h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 15px 40px 15px 40px;
     color: var(--main-menu);
+}
+
+.contPostulacion p {
+    margin: 15px 0 15px 0;
+    color: var(--main-menu);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.botondos {
+    color: var(--main-menu);
+    padding: 5px;
+    border: 1px solid var(--main-menu);
+    border-radius: 50px;
 }
 
 footer {
@@ -164,39 +229,63 @@ footer {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
 
 }
 
 .contFooter1 {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-top: 30px;
+    padding: 30px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content:start;
 }
+.contFooter2{
+    width: 50%;
+    height: auto;
+    padding-left: 150px;
+    display: flex;
+    justify-content: start;
 
+}
+.afip{
+    width: 30%;
+    height: 80px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: end;
+}
+hr{
+    width: 64%;
+    text-align: center;
+}
 .nosotros,
 .ipactoSocial,
 .atencionCliente,
 .experiencia {
-    width: 20%;
+    width: 24%;
     height: auto;
     display: flex;
     flex-flow: column wrap;
+
 }
 
 .nosotros a,
 .ipactoSocial a,
 .atencionCliente a,
-.experiencia a{
+.experiencia a {
+    font-size: 0.90rem;
+    font-weight: 550;
     margin: 15px 0;
+    color:var(--main-footer);
 }
 
 .nosotros a:hover,
 .ipactoSocial a:hover,
 .atencionCliente a:hover,
-.experiencia a:hover{
+.experiencia a:hover {
     color: rgb(49, 48, 48);
 }
 
@@ -228,12 +317,22 @@ footer {
 .contIfoWeb a:not(#mapa) {
     margin-right: 5px;
     padding-right: 5px;
-    border-right: 2px solid grey;
+    border-right: 2px solid var(--main-footer);
+}
+.contIfoWeb a{
+    color: var(--main-footer);
+    font-weight: 100;
 }
 
+.contIfoWeb a:hover{
+    color: var(--hover-footer);
+}
 .copy {
     width: 100%;
     height: auto;
+    color: #bec0bf;
+    font-size: 0.8rem;
+    font-weight: 0;
     margin-top: 10px;
     display: flex;
     flex-flow: column wrap;
