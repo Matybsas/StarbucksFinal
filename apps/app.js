@@ -1,6 +1,21 @@
-document.getElementById("menu").addEventListener("click",function(){
+document.querySelector(".menu").addEventListener("click",function(){
   
-    document.getElementsByName("navega").classList.toggle("mostrar");
+    document.querySelector(".menuFooter").classList.toggle("mostrar");
+});
+
+document.querySelector(".menu2").addEventListener("click",function(){
+  
+    document.querySelector(".menuFooter2").classList.toggle("mostrar");
+});
+
+document.querySelector(".menu3").addEventListener("click",function(){
+  
+    document.querySelector(".menuFooter3").classList.toggle("mostrar");
+});
+
+document.querySelector(".menu4").addEventListener("click",function(){
+  
+    document.querySelector(".menuFooter4").classList.toggle("mostrar");
 });
 
 

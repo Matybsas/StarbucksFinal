@@ -245,7 +245,7 @@ footer {
 }
 
 .contFooter2 {
-    width: 50%;
+    width: 60%;
     height: auto;
     padding-left: 150px;
     display: flex;
@@ -254,7 +254,7 @@ footer {
 }
 
 .afip {
-    width: 30%;
+    width: 20%;
     height: 80px;
     padding-right: 50px;
     display: flex;
@@ -265,32 +265,38 @@ hr {
     width: 64%;
     text-align: center;
 }
-
-.nosotros,
-.ipactoSocial,
-.atencionCliente,
-.experiencia {
-    width: 24%;
+.tituloFooter{
+    width: 93%;
+    height: auto;
+    text-align: start;
+    font-size: 1rem;
+    font-weight:900;
+}
+.menuFooter ul li,
+.menuFooter2 ul li,
+.menuFooter3 ul li,
+.menuFooter4 ul li {
+    width: 80%;
     height: auto;
     display: flex;
     flex-flow: column wrap;
-
+    list-style: none;
 }
 
-.nosotros a,
-.ipactoSocial a,
-.atencionCliente a,
-.experiencia a {
+.menuFooter ul li a,
+.menuFooter2 ul li a,
+.menuFooter3 ul li a,
+.menuFooter4 ul li a {
     font-size: 0.90rem;
     font-weight: 550;
     margin: 15px 0;
     color: var(--main-footer);
 }
 
-.nosotros a:hover,
-.ipactoSocial a:hover,
-.atencionCliente a:hover,
-.experiencia a:hover {
+.menuFooter ul li a:hover,
+.menuFooter2 ul li a:hover,
+.menuFooter3 ul li a:hover,
+.menuFooter4 ul li a:hover{
     color: rgb(49, 48, 48);
 }
 
@@ -405,10 +411,10 @@ hr {
         align-items: center;
     }
 
-    .nosotros,
-    .ipactoSocial,
-    .atencionCliente,
-    .experiencia {
+    .menuFooter ul li, 
+    .menuFooter2 ul li,
+    .menuFooter3 ul li,
+    .menuFooter4 ul li {
         width: 100%;
         height: auto;
         padding: 30px 0 30px 0;
@@ -417,17 +423,8 @@ hr {
 
     }
 
-    .nosotros i,
-    .ipactoSocial i,
-    .atencionCliente i,
-    .experiencia i {
-        margin-left: 15px;
-    }
-.nosotros,
-.ipactoSocial ,
-.atencionCliente ,
-.experiencia {
- max-height: 0 !important;
+.menuFooter, .menuFooter2, .menuFooter3,.menuFooter4  {
+ max-height: 0;
  overflow:hidden;
 }
     .ocultarDown {
@@ -442,5 +439,11 @@ hr {
         flex-flow: column wrap;
         margin-bottom: 30px;
     }
-
+.menu,
+.menu2,
+.menu3,
+.menu4{
+    float:right;
+    margin-right: 100px;
+}
 }
