@@ -45,49 +45,46 @@ header {
 
 /*MENU*/
 nav {
-    width: 35%;
+    width: 40%;
     height: 80px;
 }
 
 nav ul {
     width: 100%;
     height: 80px;
-    list-style: none;
     display: flex;
-    gap: 50px;
+    align-items: center;
+    list-style: none;
 }
 
 nav ul li {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    flex: 0;
-    align-items: center;
 
-}
-
-nav ul li a.experiencia {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
+    margin: 0 35px 0 0;
 }
 
 nav ul li a {
-    font-size: 0.83rem;
-    font-weight: 700;
-
+    color: black;
 }
 
 nav ul li a:hover {
-    line-height: 70px;
+    line-height: 80px;
+    padding: 0 0 24px;
     color: var(--main-menu);
     border-bottom: 5px solid var(--main-menu);
 }
 
+.hamburguesa {
+    width: 5%;
+    height: auto;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*LOCALIZACION TIENDAS*/
 .localizador {
-    width: 25%;
+    width: 17%;
     height: 80px;
     text-align: end;
     display: flex;
@@ -200,10 +197,12 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
 }
-.contImagen img{
- display: flex;
- max-width: 100%;
+
+.contImagen img {
+    display: flex;
+    max-width: 100%;
 }
+
 .contPostulacion h2 {
     font-size: 3rem;
     text-align: center;
@@ -370,10 +369,96 @@ hr {
     max-height: 700px !important;
 }
 
+.mostrarMenu{
+    visibility: visible;
+}
+
+.localizador .barrMenu{
+    display: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
+
+    /*menu*/
+    header {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        background-color: white;
+        display: flex;
+        justify-content: end;
+    }
+
+    .logo {
+        width: 20%;
+        height: auto;
+        margin-right: 75%;
+        justify-content: start;
+    }
+
+    .hamburguesa {
+        font-size: 25px;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    nav {
+        width: 90%;
+        height: 100%;
+        background-color: white;
+        visibility:hidden;
+        position: fixed;
+        margin-top: 80px;
+        z-index: 1;
+    }
+
+    nav ul {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+    }
+
+    nav ul li a {
+        width: 90%;
+        height: auto;
+        margin: 50px;
+    }
+
+    nav ul li a:hover {
+        line-height: none;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .localizador {
+        width: 80%;
+        height: auto;
+        visibility: hidden;
+        z-index: 1;
+        margin-top: 350px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: start;
+    }
+    .localizador .barrMenu{
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
     .viaje {
         width: 100%;
         height: auto;
+        margin-top: 80px;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -406,19 +491,24 @@ hr {
         flex-flow: column-reverse wrap;
         align-items: center;
     }
-    .contPostulacion{
+
+    .contPostulacion {
         width: 100%;
         height: auto;
     }
-    .contPostulacion h2{
+
+    .contPostulacion h2 {
         font-size: 1.85rem;
     }
-    .contPostulacion p{
+
+    .contPostulacion p {
         font-size: 1.1rem !important;
     }
-    .contPostulacion .botondos{
-        margin: 30px 0 ;
+
+    .contPostulacion .botondos {
+        margin: 30px 0;
     }
+
     .contFooter1 {
         width: 100%;
         height: auto;
@@ -428,20 +518,22 @@ hr {
         align-content: center;
         align-items: center;
     }
-    
+
 
     .tituloFooter {
-        width:100%;
+        width: 100%;
         height: auto;
         font-size: 0.75rem;
         font-weight: 100;
     }
+
     .nosotros,
     .ipactoSocial,
     .atencionCliente,
-    .experiencia{
+    .experiencia {
         margin: 0 0 40px 0;
     }
+
     .menuFooter ul li,
     .menuFooter2 ul li,
     .menuFooter3 ul li,
@@ -474,13 +566,15 @@ hr {
         align-content: start;
         margin-bottom: 30px;
     }
-.afip{
-    width: 100%;
-    height: auto;
-    margin-left:180px ;
-    display: flex;
-    justify-content: start;    
-}
+
+    .afip {
+        width: 100%;
+        height: auto;
+        margin-left: 180px;
+        display: flex;
+        justify-content: start;
+    }
+
     .menu,
     .menu2,
     .menu3,
@@ -493,19 +587,24 @@ hr {
         height: auto;
         display: flex;
         max-width: 100%;
-       }
-       .copy{
+    }
+    .contIfoWeb{
+        width: 90%;
+        height: auto;
+    }
+    .copy {
         width: 100%;
         height: auto;
         text-align: center;
         font-size: 0.7rem;
-       }
-       .copy .copyP2{
+    }
+
+    .copy .copyP2 {
         width: 70%;
         text-align: center;
         display: flex;
         flex-flow: row wrap;
         align-content: center;
         font-size: 0.5rem;
-       }
+    }
 }

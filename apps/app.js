@@ -1,3 +1,15 @@
+//menu principal
+document.querySelector(".menuHamburguesa").addEventListener("click",function(){
+  
+    document.querySelector(".menuPrincipal").classList.toggle("mostrarMenu");
+});
+//Localizador
+document.querySelector(".menusss").addEventListener("click",function(){
+  
+    document.querySelector(".menuLocalizador").classList.toggle("mostrarMenu");
+});
+
+//menu Footer
 document.querySelector(".menu").addEventListener("click",function(){
   
     document.querySelector(".menuFooter").classList.toggle("mostrar");
@@ -19,12 +31,5 @@ document.querySelector(".menu4").addEventListener("click",function(){
 });
 
 
-/*$(".mostrarLista").on( "click", function() {
-    $('.target').show(); //muestro mediante clase
- });
-$(".mostrarLista").on( "click", function() {
-
-    $('.target').hide(); //muestro mediante clase
-});*/
 
 //FINALIZA EL MENU
