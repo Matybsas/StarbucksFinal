@@ -200,7 +200,10 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
 }
-
+.contImagen img{
+ display: flex;
+ max-width: 100%;
+}
 .contPostulacion h2 {
     font-size: 3rem;
     text-align: center;
@@ -265,13 +268,15 @@ hr {
     width: 64%;
     text-align: center;
 }
-.tituloFooter{
+
+.tituloFooter {
     width: 93%;
     height: auto;
     text-align: start;
     font-size: 1rem;
-    font-weight:900;
+    font-weight: 900;
 }
+
 .menuFooter ul li,
 .menuFooter2 ul li,
 .menuFooter3 ul li,
@@ -296,7 +301,7 @@ hr {
 .menuFooter ul li a:hover,
 .menuFooter2 ul li a:hover,
 .menuFooter3 ul li a:hover,
-.menuFooter4 ul li a:hover{
+.menuFooter4 ul li a:hover {
     color: rgb(49, 48, 48);
 }
 
@@ -360,7 +365,8 @@ hr {
 .ocultarDown {
     visibility: hidden;
 }
-.mostrar{
+
+.mostrar {
     max-height: 700px !important;
 }
 
@@ -397,10 +403,22 @@ hr {
         width: 100%;
         height: auto;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column-reverse wrap;
         align-items: center;
     }
-
+    .contPostulacion{
+        width: 100%;
+        height: auto;
+    }
+    .contPostulacion h2{
+        font-size: 1.85rem;
+    }
+    .contPostulacion p{
+        font-size: 1.1rem !important;
+    }
+    .contPostulacion .botondos{
+        margin: 30px 0 ;
+    }
     .contFooter1 {
         width: 100%;
         height: auto;
@@ -410,23 +428,39 @@ hr {
         align-content: center;
         align-items: center;
     }
+    
 
-    .menuFooter ul li, 
+    .tituloFooter {
+        width:100%;
+        height: auto;
+        font-size: 0.75rem;
+        font-weight: 100;
+    }
+    .nosotros,
+    .ipactoSocial,
+    .atencionCliente,
+    .experiencia{
+        margin: 0 0 40px 0;
+    }
+    .menuFooter ul li,
     .menuFooter2 ul li,
     .menuFooter3 ul li,
     .menuFooter4 ul li {
         width: 100%;
         height: auto;
-        padding: 30px 0 30px 0;
         display: flex;
         flex-flow: column wrap;
 
     }
 
-.menuFooter, .menuFooter2, .menuFooter3,.menuFooter4  {
- max-height: 0;
- overflow:hidden;
-}
+    .menuFooter,
+    .menuFooter2,
+    .menuFooter3,
+    .menuFooter4 {
+        max-height: 0;
+        overflow: hidden;
+    }
+
     .ocultarDown {
         visibility: visible;
         cursor: pointer;
@@ -437,13 +471,41 @@ hr {
         height: auto;
         display: flex;
         flex-flow: column wrap;
+        align-content: start;
         margin-bottom: 30px;
     }
-.menu,
-.menu2,
-.menu3,
-.menu4{
-    float:right;
-    margin-right: 100px;
+.afip{
+    width: 100%;
+    height: auto;
+    margin-left:180px ;
+    display: flex;
+    justify-content: start;    
 }
+    .menu,
+    .menu2,
+    .menu3,
+    .menu4 {
+        float: right;
+    }
+
+    .contImagen {
+        width: 100%;
+        height: auto;
+        display: flex;
+        max-width: 100%;
+       }
+       .copy{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 0.7rem;
+       }
+       .copy .copyP2{
+        width: 70%;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        font-size: 0.5rem;
+       }
 }

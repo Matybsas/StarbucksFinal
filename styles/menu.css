@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo-producto: #203933;
+}
+
+.containerTitulo {
+    width: 50%;
+    margin-left: 116px;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contTitulo {
+    width: 55%;
+    height: auto;
+    padding: 35px 0 35px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+}
+
+.subtitulo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitulo p {
+    width: 60%;
+    height: auto;
+    padding: 20px 0 20px 0;
+}
+
+.bebidas,
+.comida,
+.enCasa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contProducto {
+    width: 50%;
+    height: auto;
+    /* margin: 0 100px 0 100px;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.producto h2 {
+    font-size: 1.2rem;
+}
+
+.imgProducto img:not(.sandwichs) {
+    width: 75%;
+}
+
+.imgProducto img {
+    border: 2px solid var(--fondo-producto);
+    border-radius: 50%;
+    background-color: var(--fondo-producto);
+}
+
+.imgProducto img:hover {
+    border: 10px solid rgb(196, 228, 228);
+}
