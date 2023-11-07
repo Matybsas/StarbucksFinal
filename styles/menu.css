@@ -77,7 +77,7 @@
 }
 
 .imgProducto img {
-    border: 8px solid var(--fondo-producto);
+    border:8px solid var(--fondo-producto);
     border-radius: 50%;
     background-color: var(--fondo-producto);
 }
