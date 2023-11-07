@@ -77,11 +77,11 @@
 }
 
 .imgProducto img {
-    border: 2px solid var(--fondo-producto);
+    border: 8px solid var(--fondo-producto);
     border-radius: 50%;
     background-color: var(--fondo-producto);
 }
 
 .imgProducto img:hover {
-    border: 10px solid rgb(196, 228, 228);
+    border: 8px solid rgb(196, 228, 228);
 }

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
     font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-style: italic;
@@ -241,6 +242,7 @@ footer {
     width: 80%;
     height: auto;
     margin-top: 30px;
+    box-sizing: border-box;
     padding: 30px;
     display: flex;
     flex-flow: row wrap;
@@ -250,6 +252,7 @@ footer {
 .contFooter2 {
     width: 60%;
     height: auto;
+    box-sizing: border-box;
     padding-left: 150px;
     display: flex;
     justify-content: start;
@@ -259,6 +262,7 @@ footer {
 .afip {
     width: 20%;
     height: 80px;
+    box-sizing: border-box;
     padding-right: 50px;
     display: flex;
     justify-content: end;
@@ -309,16 +313,35 @@ hr {
 .redesSociales {
     width: 100%;
     height: auto;
-    font-size: 35px;
-    margin: 20px 0;
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
 }
 
-.redesSociales a i {
-    margin: 25px;
+.redesSociales ul {
+    width: 20%;
+    height: auto;
+    list-style: none;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
+
+.redesSociales ul li {
+    font-size: 20px;
+}
+
+.redesSociales ul li a {
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    margin: 5px 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+.redesSociales ul li a i{
+    padding: 4px;
+}
+
 
 .contIfoWeb {
     width: 100%;
@@ -349,6 +372,7 @@ hr {
     width: 100%;
     height: auto;
     color: #bec0bf;
+    box-sizing: border-box;
     font-size: 0.8rem;
     font-weight: 0;
     margin-top: 10px;
@@ -358,6 +382,7 @@ hr {
 }
 
 .copyP2 {
+    box-sizing: border-box;
     font-size: 0.65rem;
 
 }
@@ -366,15 +391,7 @@ hr {
     visibility: hidden;
 }
 
-.mostrar {
-    max-height: 700px !important;
-}
-
-.mostrarMenu{
-    visibility: visible;
-}
-
-.localizador .barrMenu{
+.localizador .barrMenu {
     display: none;
 }
 
@@ -409,7 +426,7 @@ hr {
         width: 90%;
         height: 100%;
         background-color: white;
-        visibility:hidden;
+        visibility: hidden;
         position: fixed;
         margin-top: 80px;
         z-index: 1;
@@ -435,7 +452,7 @@ hr {
     }
 
     nav ul li a:hover {
-        line-height: none;
+        line-height: 0;
         padding: 0;
         border-bottom: none;
     }
@@ -451,11 +468,14 @@ hr {
         align-items: start;
         justify-content: start;
     }
-    .localizador .barrMenu{
+
+    .localizador .barrMenu {
         width: 80%;
         height: auto;
+        display: flex;
         margin-bottom: 20px;
     }
+
     .viaje {
         width: 100%;
         height: auto;
@@ -528,10 +548,22 @@ hr {
         font-weight: 100;
     }
 
+    .contFooter2 {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .nosotros,
     .ipactoSocial,
     .atencionCliente,
     .experiencia {
+        width: 100%;
+        height: auto;
         margin: 0 0 40px 0;
     }
 
@@ -559,19 +591,12 @@ hr {
         cursor: pointer;
     }
 
-    .contFooter2 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-flow: column wrap;
-        align-content: start;
-        margin-bottom: 30px;
-    }
+
 
     .afip {
         width: 100%;
         height: auto;
-        margin-left: 180px;
+        /*margin-left: 180px;*/
         display: flex;
         justify-content: start;
     }
@@ -589,10 +614,12 @@ hr {
         display: flex;
         max-width: 100%;
     }
-    .contIfoWeb{
+
+    .contIfoWeb {
         width: 90%;
         height: auto;
     }
+
     .copy {
         width: 100%;
         height: auto;
@@ -608,4 +635,12 @@ hr {
         align-content: center;
         font-size: 0.5rem;
     }
+}
+
+.mostrar {
+    max-height: 700px;
+}
+
+.mostrarMenu {
+    visibility: visible;
 }
